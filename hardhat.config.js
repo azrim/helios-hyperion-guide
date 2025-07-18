@@ -21,8 +21,8 @@ module.exports = {
       gasLimit: 500000,
     },
     "helios-testnet": {
-      url: "http://testnet1.helioschainlabs.org:8545/",
-      chainId: 4242,
+      url: "https://testnet1.helioschainlabs.org",
+      chainId: 42000,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       gasPrice: Number(GAS_PRICE),
       gasLimit: 500000,
