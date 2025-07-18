@@ -1,13 +1,13 @@
 const hre = require("hardhat");
 
 async function main() {
-  const SimpleStorage = await hre.ethers.getContractFactory("SimpleStorage");
-  const simpleStorage = await SimpleStorage.deploy();
+  const HyperionDataConsumer = await hre.ethers.getContractFactory("HyperionDataConsumer");
+  const hyperionDataConsumer = await HyperionDataConsumer.deploy();
 
-  await simpleStorage.waitForDeployment();
+  await hyperionDataConsumer.waitForDeployment();
 
   console.log(
-    `SimpleStorage deployed to ${simpleStorage.target}`
+    `HyperionDataConsumer deployed to ${hyperionDataConsumer.target}`
   );
 }
 
